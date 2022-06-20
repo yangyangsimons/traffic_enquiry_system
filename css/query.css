@@ -1,0 +1,164 @@
+/*reset the style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,main{
+  color: #555;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  height: 100%;
+}
+
+.clear-float::after{
+  content: "";
+  display:block;
+  clear:both;
+}
+/* set background style */
+main{
+  /* background: url(./traffic.jpeg) no-repeat; */
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+}
+/*set header style*/
+header{
+  box-sizing: border-box;
+  min-height: 50px;
+  background: #BBD;
+}
+/* set all the table style */
+table{
+  margin: auto;
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse
+}
+table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;}
+table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff
+}
+body input[type="submit"]{
+  display: inline-block;
+  background: #E27575;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+  margin: 8px;
+  min-width: 120px;
+}
+button{
+  float: left;
+  display: inline-block;
+  background: #9BA08A;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  color: #FFF;
+  box-shadow: 1px 1px 5px #B6B6B6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9E3F3F;
+  cursor: pointer;
+  margin: 8px;
+  min-width: 120px;
+}
+header form[name="changePassword"].hidden{
+  display: none;
+}
+header form[name="changePassword"].active{
+  clear: both;
+  display: block;
+}
+
+header form[name="signup"].hidden{
+  clear:both;
+  display: none;
+}
+header form[name="signup"].active{
+  clear:both;
+  display: block;
+}
+html body header .errorTips{
+  color: red;
+}
+div.incident{
+  align-items: flex-start;
+  background: #F7F7F7;
+  border: 1px solid #E4E4E4;
+  color: #888;
+  text-shadow: 1px 1px 1px #FFF;
+  width: 200px'
+}
+div.incident>div, div.queryContent>div, div.vehiclePart>div{
+  border-bottom: 1px solid #E4E4E4;
+}
+div.incident h2, div.queryContent h2, div.vehiclePart h2{
+  display: block;
+  font-size: 20px;
+  padding: 0px 0px 0px 40px;
+  color: #333333;
+}
+div.incident h2 span, div.queryContent h2 span, div.vehiclePart h2 span{
+  display: block;
+  font-size: 12px;
+}
+div.incident label, div.queryContent label, div.vehiclePart label, header label{
+  display: block;
+  margin:0;
+  text-align: left;
+  clear: both;
+}
+div.incident form span, div.queryContent form span, div.vehiclePart form span, header form span{
+  display: inline-block;
+  text-align: left;
+  padding-right: 10px;
+  margin: 5px;
+  color: #888;
+  font-weight:bold;
+  width: 130px;
+}
+input[type="text"],input[type="Date"],input[type="password"]{
+  display: inline-block;
+  border: 1px solid #DADADA;
+  color: #888;
+  height: 25px;
+  padding: 3px 0px;
+  font-size: 12px;
+  line-height: 15px;
+  width: 200px;
+  margin-left: 10px;
+}
+
+div.incident select, div.vehiclePart select{
+  height: 25px;
+  line-height: 15px;
+  background: #FFF;
+  width: 200px;
+  padding: 3px 0px;
+  margin-left: 10px;
+}
+div.queryContent{
+  background-color: #abc;
+}
+div.vehiclePart{
+  background: #9BA08A;
+}
+
